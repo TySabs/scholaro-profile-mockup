@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholaro Jobs Mockup</title>
+  <meta name="description" content="A cleaner jobs marketplace mockup for Scholaro." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Scholaro home">
+        <img src="https://cdn.scholaro.com/images/scholaro-logo.svg" alt="Scholaro" class="brand-logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="jobs.html">Jobs</a>
+        <a href="#filters">Filters</a>
+        <a href="#saved">Saved</a>
+      </nav>
+      <a class="nav-cta" href="#signin">Sign In</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="jobs-hero">
+      <div class="container jobs-hero-inner">
+        <div class="jobs-hero-copy">
+          <span class="eyebrow">Jobs Marketplace Mockup</span>
+          <h1>Find your next role without the UI noise.</h1>
+          <p class="subtext">This redesign keeps the strongest parts of the current jobs experience, search, filters, saved jobs, and detail preview, while simplifying the layout and making the page feel more trustworthy and easier to scan.</p>
+        </div>
+        <div class="jobs-search-shell card">
+          <div class="jobs-search-grid">
+            <div class="jobs-input">
+              <label>What</label>
+              <input type="text" value="Staff software engineer" />
+            </div>
+            <div class="jobs-input">
+              <label>Where</label>
+              <input type="text" value="Chicago or remote" />
+            </div>
+            <button class="btn btn-primary">Search jobs</button>
+          </div>
+          <div class="jobs-chip-row">
+            <span class="job-chip active">Remote</span>
+            <span class="job-chip">Visa sponsorship</span>
+            <span class="job-chip">Senior level</span>
+            <span class="job-chip">Full-time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container jobs-layout">
+      <aside class="jobs-sidebar" id="filters">
+        <div class="card sidebar-block">
+          <h3>Refine results</h3>
+          <div class="filter-group">
+            <span>Job type</span>
+            <label><input type="checkbox" checked /> Full-time</label>
+            <label><input type="checkbox" /> Contract</label>
+            <label><input type="checkbox" /> Internship</label>
+          </div>
+          <div class="filter-group">
+            <span>Work arrangement</span>
+            <label><input type="checkbox" checked /> Remote</label>
+            <label><input type="checkbox" /> Hybrid</label>
+            <label><input type="checkbox" /> On-site</label>
+          </div>
+          <div class="filter-group">
+            <span>Posted</span>
+            <label><input type="radio" name="posted" checked /> Past 24 hours</label>
+            <label><input type="radio" name="posted" /> Past 7 days</label>
+            <label><input type="radio" name="posted" /> Anytime</label>
+          </div>
+        </div>
+
+        <div class="card sidebar-block" id="saved">
+          <h3>Saved jobs</h3>
+          <ul class="saved-list">
+            <li>
+              <strong>Staff Frontend Engineer</strong>
+              <span>Notion</span>
+            </li>
+            <li>
+              <strong>Senior Product Engineer</strong>
+              <span>Linear</span>
+            </li>
+            <li>
+              <strong>React Platform Lead</strong>
+              <span>Stripe</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="jobs-results">
+        <div class="results-toolbar card">
+          <div>
+            <strong>248 jobs</strong>
+            <span class="muted">matching “Staff software engineer”</span>
+          </div>
+          <div class="results-actions">
+            <button class="toolbar-btn">Most recent</button>
+            <button class="toolbar-btn">Salary</button>
+          </div>
+        </div>
+
+        <div class="results-grid">
+          <div class="results-list">
+            <article class="card job-listing selected">
+              <div class="job-listing-top">
+                <div>
+                  <h3>Staff Software Engineer</h3>
+                  <p>Anthropic • Remote</p>
+                </div>
+                <span class="pill">Today</span>
+              </div>
+              <div class="tag-list">
+                <span>$240k–$320k</span>
+                <span>Remote</span>
+                <span>Full-time</span>
+                <span>Visa friendly</span>
+              </div>
+              <p class="job-snippet">Lead high-impact product engineering work across AI systems, developer experience, and customer-facing surfaces.</p>
+            </article>
+
+            <article class="card job-listing">
+              <div class="job-listing-top">
+                <div>
+                  <h3>Senior Frontend Engineer</h3>
+                  <p>OpenAI • San Francisco / Remote</p>
+                </div>
+                <span class="pill">2d</span>
+              </div>
+              <div class="tag-list">
+                <span>$220k–$290k</span>
+                <span>Hybrid</span>
+                <span>Full-time</span>
+              </div>
+              <p class="job-snippet">Build product surfaces that make advanced AI systems understandable and useful for real users.</p>
+            </article>
+
+            <article class="card job-listing">
+              <div class="job-listing-top">
+                <div>
+                  <h3>Principal React Engineer</h3>
+                  <p>Vercel • Remote</p>
+                </div>
+                <span class="pill">3d</span>
+              </div>
+              <div class="tag-list">
+                <span>$210k–$275k</span>
+                <span>Remote</span>
+                <span>Full-time</span>
+              </div>
+              <p class="job-snippet">Own frontend architecture, performance, and product systems for a fast-moving developer platform team.</p>
+            </article>
+          </div>
+
+          <aside class="card job-preview">
+            <div class="preview-header">
+              <div>
+                <h2>Staff Software Engineer</h2>
+                <p>Anthropic • Remote • Posted today</p>
+              </div>
+              <button class="btn btn-secondary">Save</button>
+            </div>
+
+            <div class="preview-section">
+              <h3>Why this layout is better</h3>
+              <ul>
+                <li>Search is more prominent and calmer.</li>
+                <li>Filters move into a dedicated sidebar instead of competing with the hero.</li>
+                <li>Job cards are easier to scan with stronger hierarchy.</li>
+                <li>The right-side preview feels like a true reading panel, not just a stuffed detail column.</li>
+              </ul>
+            </div>
+
+            <div class="preview-section">
+              <h3>Role summary</h3>
+              <p>Lead the development of product and platform experiences that help users interact with advanced AI systems. Work closely with design, research, and infrastructure partners to deliver robust, elegant interfaces.</p>
+            </div>
+
+            <div class="preview-section">
+              <h3>Highlights</h3>
+              <div class="tag-list large">
+                <span>High impact</span>
+                <span>Senior scope</span>
+                <span>AI product</span>
+                <span>Remote</span>
+              </div>
+            </div>
+
+            <div class="preview-actions">
+              <a class="btn btn-primary" href="#">Apply now</a>
+              <a class="btn btn-secondary" href="#">Share</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

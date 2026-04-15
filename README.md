@@ -8,5 +8,6 @@ This repository is proprietary. No permission is granted to use, copy, modify, d
 See `LICENSE` for details.
 
 ## Files
-- `index.html`
+- `index.html` — profile mockup
+- `jobs.html` — jobs page mockup
 - `styles.css`
